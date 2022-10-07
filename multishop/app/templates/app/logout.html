@@ -1,0 +1,13 @@
+{% comment %} {% extends 'app/base.html' %}
+
+{% block content %}
+<h2>You have been logged out </h2>
+    <br>
+    <div class="alert alert-success" role="alert">
+        <h2 style="text-align: center;">Logged out!</h2>
+    </div>
+
+    <h3>Login again?</h3>
+    <a href="{% url 'userlogin' %}">---> Login</a> <br>
+    <a href="{% url 'home' %}"><--- Or go back to home.</a>
+{% endblock content %} {% endcomment %}
